@@ -1,0 +1,15 @@
+{
+  "authors": ["Codex"],
+  "copyright": "Copyright © 2026",
+  "description": "Compile-time SQLite3 C header parser and BetterC wrapper demo.",
+  "dflags": ["-betterC"],
+  "license": "MIT",
+  "name": "sqlite3-wrapper",
+  "preBuildCommands": [
+    "powershell -NoProfile -ExecutionPolicy Bypass -File build-sqlite3.ps1"
+  ],
+  "sourceFiles": ["c/sqlite3.obj"],
+  "stringImportPaths": ["c"],
+  "targetName": "sqlite3-wrapper",
+  "targetType": "executable"
+}
